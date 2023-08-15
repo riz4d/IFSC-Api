@@ -1,8 +1,7 @@
 {
     "name": "IFSC-API",
     "version": 2,
-    "builds": [
-    { "src": "*.py", "use": "@vercel/python" },
+    "builds": [{ "src": "*.py", "use": "@vercel/python" }],
     
     "routes": [{"src": "/(.*)", "dest": "app.py"}]
 }
