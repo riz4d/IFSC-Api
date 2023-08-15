@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Inconsolata|Raleway:200');
+
+body {
+    color: black;
+    background: white;
+    font: 400 14px / 1.42 'Roboto', Helvetica, sans-serif
+}
+
+header {
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 12px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: black;
+    margin: 12px 0
+}
+
+h1 .permalink,
+h2 .permalink,
+h3 .permalink,
+h4 .permalink,
+h5 .permalink {
+    margin-left: 0;
+    opacity: 0;
+    transition: opacity .25s ease
+}
+
+h1:hover .permalink,
+h2:hover .permalink,
+h3:hover .permalink,
+h4:hover .permalink,
+h5:hover .permalink {
+    opacity: 1
+}
+
+.triple h1 .permalink,
+.triple h2 .permalink,
+.triple h3 .permalink,
+.triple h4 .permalink,
+.triple h5 .permalink {
+    opacity: .15
+}
+
+.triple h1:hover .permalink,
+.triple h2:hover .permalink,
+.triple h3:hover .permalink,
+.triple h4:hover .permalink,
+.triple h5:hover .permalink {
+    opacity: .15
+}
+
+h1 {
+    font: 200 36px 'Raleway', Helvetica, sans-serif;
+    font-size: 36px
+}
+
+h2 {
+    font: 200 36px 'Raleway', Helvetica, sans-serif;
+    font-size: 30px
+}
+
+h3 {
+    font-size: 100%;
+    text-transform: uppercase
+}
+
+h5 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+p {
+    margin: 0 0 10px
+}
+
+p.choices {
+    line-height: 1.6
+}
+
+a {
+    color: #18bc9c;
+    text-decoration: none
+}
+
+li p {
+    margin: 0
+}
+
+hr.split {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    padding-left: 6px;
+    margin: 12px auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.2) 51.4%, rgba(255, 255, 255, 0.2) 51.4%, rgba(255, 255, 255, 0) 80%)
+}
+
+dl dt {
+    float: left;
+    width: 130px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700
+}
+
+dl dd {
+    margin-left: 150px
+}
+
+blockquote {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15.5px;
+    padding: 10px 20px;
+    margin: 12px 0;
+    border-left: 5px solid #e8e8e8
+}
+
+blockquote p:last-child {
+    margin-bottom: 0
+}
+
+pre {
+    background-color: #f5f5f5;
+    padding: 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    overflow: auto
+}
+
+pre code {
+    color: black;
+    background-color: transparent;
+    padding: 0;
+    border: none
+}
+
+code {
+    color: #444;
+    background-color: #f5f5f5;
+    font: 'Inconsolata', monospace;
+    padding: 1px 4px;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px
+}
+
+ul,
+ol {
+    padding-left: 2em
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 12px
+}
+
+table tr:nth-child(2n) {
+    background-color: #fafafa
+}
+
+table th,
+table td {
+    padding: 6px 12px;
+    border: 1px solid #e6e6e6
+}
+
+.text-muted {
+    opacity: .5
+}
+
+.note,
+.warning {
+    padding: .3em 1em;
+    margin: 1em 0;
+    border-radius: 2px;
+    font-size: 90%
+}
+
+.note h1,
+.warning h1,
+.note h2,
+.warning h2,
+.note h3,
+.warning h3,
+.note h4,
+.warning h4,
+.note h5,
+.warning h5,
+.note h6,
+.warning h6 {
+    font-family: 200 36px 'Raleway', Helvetica, sans-serif;
+    font-size: 135%;
+    font-weight: 500
+}
+
+.note p,
+.warning p {
+    margin: .5em 0
+}
+
+.note {
+    color: black;
+    background-color: #eff7fc;
+    border-left: 4px solid #3498db
+}
+
+.note h1,
+.note h2,
+.note h3,
+.note h4,
+.note h5,
+.note h6 {
+    color: #3498db
+}
+
+.warning {
+    color: black;
+    background-color: #fcf0ef;
+    border-left: 4px solid #d62c1a
+}
+
+.warning h1,
+.warning h2,
+.warning h3,
+.warning h4,
+.warning h5,
+.warning h6 {
+    color: #d62c1a
+}
+
+header {
+    margin-top: 24px
+}
+
+nav {
+    position: fixed;
+    top: 24px;
+    bottom: 0;
+    overflow-y: auto
+}
+
+nav .resource-group {
+    padding: 0
+}
+
+nav .resource-group .heading {
+    position: relative
+}
+
+nav .resource-group .heading .chevron {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    opacity: .5
+}
+
+nav .resource-group .heading a {
+    display: block;
+    color: black;
+    opacity: .7;
+    border-left: 2px solid transparent;
+    margin: 0
+}
+
+nav .resource-group .heading a:hover {
+    text-decoration: none;
+    background-color: bad-color;
+    border-left: 2px solid black
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+nav ul a {
+    display: block;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 8px 12px;
+    border-top: 1px solid #ededed;
+    border-left: 2px solid transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+nav ul a:hover {
+    text-decoration: none;
+    background-color: bad-color;
+    border-left: 2px solid black
+}
+
+
+.preload * {
+    transition: none !important
+}
+.middle:before{
+    content: '';
+    display: table
+}
+
+.right a {
+    color: #18bc9c
+}
+
+.right h1,
+.right h2,
+.right h3,
+.right h4,
+.right h5,
+.right p,
+.right div {
+    color: white
+}
+
+.right pre {
+    background-color: #1d1f21;
+    border: 1px solid #1d1f21
+}
+
+.right pre code {
+    color: #c5c8c6
+}
+.definition .uri {
+    word-break: break-all;
+    word-wrap: break-word
+}
+
+
+.resource-group {
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: white;
+    border: 1px solid #ededed;
+    border-radius: 6px
+}
+
+.resource-group h2.group-heading,
+.resource-group .heading a {
+    padding: 12px;
+    margin: -12px -12px 12px -12px;
+    background-color: #ededed;
+    border-bottom: 1px solid #ededed;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.triple .content .resource-group {
+    padding: 0;
+    border: none
+}
+
+.triple .content .resource-group h2.group-heading,
+.triple .content .resource-group .heading a {
+    margin: 0 0 12px 0;
+    border: 1px solid #ededed
+}
+
+nav .resource-group .heading a {
+    padding: 12px;
+    margin-bottom: 0
+}
+
+nav .resource-group .collapse-content {
+    padding: 0
+}
+
+.action {
+    margin-bottom: 12px;
+    padding: 12px 12px 0 12px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 6px
+}
+
+.action h4.action-heading {
+    padding: 12px;
+    margin: -12px -12px 12px -12px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.action h4.action-heading .name {
+    float: right;
+    font-weight: normal
+}
+
+.action h4.action-heading .method {
+    padding: 6px 12px;
+    margin-right: 12px;
+    border-radius: 3px
+}
+
+.action h4.action-heading .method.get {
+    color: #000;
+    background-color: rgb(0, 200, 255)
+}
+
+.action h4.action-heading .method.head {
+    color: #000;
+    background-color: white
+}
+
+.action h4.action-heading .method.options {
+    color: #000;
+    background-color: white
+}
+
+.action h4.action-heading .method.put {
+    color: #000;
+    background-color: white
+}
+
+.action h4.action-heading .method.patch {
+    color: #000;
+    background-color: white
+}
+
+.action h4.action-heading .method.post {
+    color: #000;
+    background-color: white
+}
+
+.action h4.action-heading .method.delete {
+    color: #000;
+    background-color: white
+}
+
+.action h4.action-heading code {
+    color: #444;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: transparent;
+    font-weight: normal
+}
+
+.action dl.inner {
+    padding-bottom: 2px
+}
+
+.action .title {
+    border-bottom: 1px solid white;
+    margin: 0 -12px -1px -12px;
+    padding: 12px
+}
+
+.action.get {
+    border-color: #3498db
+}
+
+.action.get h4.action-heading {
+    color: white;
+    background: #e9e9e9;
+    border-bottom-color: #3498db
+}
+
+.action.head {
+    border-color: #3498db
+}
+
+.action.head h4.action-heading {
+    color: white;
+    background: #3498db;
+    border-bottom-color: #3498db
+}
+
+.action.options {
+    border-color: #3498db
+}
+
+.action.options h4.action-heading {
+    color: white;
+    background: #3498db;
+    border-bottom-color: #3498db
+}
+
+.action.post {
+    border-color: #18bc9c
+}
+
+.action.post h4.action-heading {
+    color: white;
+    background: #18bc9c;
+    border-bottom-color: #18bc9c
+}
+
+.action.put {
+    border-color: #f39c12
+}
+
+.action.put h4.action-heading {
+    color: white;
+    background: #f39c12;
+    border-bottom-color: #f39c12
+}
+
+.action.patch {
+    border-color: #f39c12
+}
+
+.action.patch h4.action-heading {
+    color: white;
+    background: #f39c12;
+    border-bottom-color: #f39c12
+}
+
+.action.delete {
+    border-color: #e74c3c
+}
+
+.action.delete h4.action-heading {
+    color: white;
+    background: #e74c3c;
+    border-bottom-color: #e74c3c
+}
